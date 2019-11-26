@@ -20,7 +20,7 @@ class ImageList extends Component {
       })
     ) : (
         <div className='no-image' style={{ width: '450px', margin: 'auto' }}>
-          No images...
+          Use different key words...
       </div>
       )
     return (

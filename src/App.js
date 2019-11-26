@@ -7,7 +7,9 @@ import { imageAction } from './actions/imageAction';
 import ImageList from './Components/ImageList';
 
 class App extends Component {
-
+  componentDidMount() {
+    this.handleSubmit('positive')
+  }
   handleSubmit = async (e) => {
     const res = await unsplash.get(`search/photos`, {
       params: { query: e }
