@@ -1,9 +1,24 @@
-
-.welcome {
+.welcome,
+.thumbnail-gallery ,
+.no-image {
   text-align: center;
 }
-.image-form {
+.image-form
+{
   width: 450px;
-  margin: auto
+  margin: auto;
+}
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-row-end: span 2;
+}
+.image-list img {
+  width: 500px;
+}
+
+.col img {
+  margin-top: 10px;
+  vertical-align: middle;
  
 }

@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 class SearchBar extends Component {
   handleInput = e => {
     e.preventDefault();
-    console.log('changed', e.target.value)
     this.props.onSubmit(e.target.value)
   }
   render() {

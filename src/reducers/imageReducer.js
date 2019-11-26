@@ -1,15 +1,10 @@
 const initState = {}
 
-export const imageReducer =( state = initState, action) => {
+export const imageReducer = (state = initState, action) => {
   switch (action.type) {
     case 'IMAGE':
-      return {
-        'Images':action.image
-      }
-    // case 'SPAN':
-    //   return {
-    //     'span': action.span
-    //   }
+      return action.images
+
     default:
       return state;
   }
